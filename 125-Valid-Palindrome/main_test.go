@@ -35,10 +35,13 @@ func isPalindrome(s string) bool {
 		l := unicode.ToLower(rune(s[i]))
 		r := unicode.ToLower(rune(s[j]))
 
+		// The unicode package solution is not the simplest by any means.
+		// It is slower than simple rune comparisons.
+		// It is probably more useful in the real world though.
 		switch {
-		case !('a' <= l && l <= 'z' || '0' <= l && l <= '9'):
+		case !(unicode.IsLetter(l) || unicode.IsDigit(l)):
 			i++
-		case !('a' <= r && r <= 'z' || '0' <= r && r <= '9'):
+		case !(unicode.IsLetter(r) || unicode.IsDigit(r)):
 			j--
 		case l != r:
 			return false
