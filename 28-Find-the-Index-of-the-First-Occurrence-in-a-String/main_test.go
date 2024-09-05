@@ -2,6 +2,7 @@ package main
 
 import (
 	"strconv"
+	"strings"
 	"testing"
 )
 
@@ -28,14 +29,5 @@ func TestStrStr(t *testing.T) {
 // LeetCode
 
 func strStr(haystack string, needle string) int {
-outer:
-	for i := 0; i < len(haystack); i++ {
-		for j := 0; j < len(needle); j++ {
-			if !(i+j < len(haystack) && haystack[i+j] == needle[j]) {
-				continue outer
-			}
-		}
-		return i
-	}
-	return -1
+	return strings.Index(haystack, needle)
 }
