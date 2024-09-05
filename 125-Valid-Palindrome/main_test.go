@@ -2,8 +2,8 @@ package main
 
 import (
 	"strconv"
-	"strings"
 	"testing"
+	"unicode"
 )
 
 func TestIsPalindrome(t *testing.T) {
@@ -32,13 +32,13 @@ func isPalindrome(s string) bool {
 	j := len(s) - 1
 
 	for i < j {
-		l := strings.ToLower(string([]byte{s[i]}))[0]
-		r := strings.ToLower(string([]byte{s[j]}))[0]
+		l := unicode.ToLower(rune(s[i]))
+		r := unicode.ToLower(rune(s[j]))
 
 		switch {
-		case !("a"[0] <= l && l <= "z"[0] || "0"[0] <= l && l <= "9"[0]):
+		case !('a' <= l && l <= 'z' || '0' <= l && l <= '9'):
 			i++
-		case !("a"[0] <= r && r <= "z"[0] || "0"[0] <= r && r <= "9"[0]):
+		case !('a' <= r && r <= 'z' || '0' <= r && r <= '9'):
 			j--
 		case l != r:
 			return false
