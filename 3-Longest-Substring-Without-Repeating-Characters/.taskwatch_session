@@ -1,0 +1,8 @@
+1726469545	start	
+1726469618	record	get problem
+1726469809	record	code tests
+1726470387	record	get solution (O(n²) time, ~O(1) memory)
+1726470553	record	get solution (O(n) time, ~O(1) memory)
+1726471199	record	code → submit → WA
+1726471442	record	code → submit → OK
+1726471461	end	
