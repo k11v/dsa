@@ -1,0 +1,17 @@
+1727690065	start	
+1727690230	record	get problem
+1727690339	record	get solution (O(n²))
+1727690370	record	get solution (O(n²) time)
+1727690947	record	get solution (O(n) time, O(n) memory)
+1727691527	record	code
+1727691661	record	check manually and fix
+1727691706	record	submit → CE
+1727691725	record	fix
+1727691777	record	submit → CE
+1727691778	record	fix
+1727691812	record	submit → OK
+1727692288	record	refactor
+1727692378	record	submix → CE
+1727692380	record	fix
+1727692391	record	submit → OK
+1727693126	end	
