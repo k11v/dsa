@@ -13,6 +13,10 @@ func Constructor() MyStack {
 
 func (this *MyStack) Push(x int)  {
 	this.q = append(this.q, x)
+	for i := 0; i < len(this.q) - 1; i++ {
+		x, this.q = dequeue(this.q)
+		this.q = append(this.q, x)
+	}
 }
 
 
@@ -21,10 +25,6 @@ func (this *MyStack) Pop() int {
 		panic("stack is empty")
 	}
 	var x int
-	for i := 0; i < len(this.q) - 1; i++ {
-		x, this.q = dequeue(this.q)
-		this.q = append(this.q, x)
-	}
 	x, this.q = dequeue(this.q)
 	return x
 }
@@ -34,14 +34,7 @@ func (this *MyStack) Top() int {
 	if len(this.q) == 0 {
 		panic("stack is empty")
 	}
-	var x int
-	for i := 0; i < len(this.q) - 1; i++ {
-		x, this.q = dequeue(this.q)
-		this.q = append(this.q, x)
-	}
-	x, this.q = dequeue(this.q)
-	this.q = append(this.q, x)
-	return x
+	return this.q[0]
 }
 
 
