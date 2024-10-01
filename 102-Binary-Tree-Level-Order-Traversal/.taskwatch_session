@@ -1,0 +1,22 @@
+1727788690	start	
+1727788745	record	get problem
+1727788770	record	get solution
+1727789185	record	code but stop
+1727789358	record	get solution
+1727790008	record	code
+1727790084	record	check
+1727790188	record	submit → CE
+1727790189	record	fix
+1727790200	record	submit → CE
+1727790251	record	fix
+1727790259	record	submit → WA
+1727790390	record	fix
+1727790392	record	submit → WA
+1727790564	record	fix
+1727790576	record	submit → TLE
+1727790653	record	fix
+1727790677	record	submit → TLE
+1727791115	record	code tests
+1727791333	record	fix solution (it was mysterious shadowing of a Go variable)
+1727791344	record	submit → OK
+1727791404	end	
