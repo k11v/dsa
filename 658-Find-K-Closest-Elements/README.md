@@ -1,0 +1,23 @@
+---
+- get problem: 1m 20s
+- get solution: 8m 14s
+- get solution with slice indexing: 3m 2s
+- code: 26m 56s
+- check: 3m 47s
+- submit → CE: 18s
+- fix: 27s
+- submit → WA: 6s
+- fix: 18s
+- submit → WA: 23s
+- fix: 4m 55s
+- submit → WA: 1m 6s
+- fix: 1m 16s
+- submit → WA: 22s
+- fix: 17s
+- submit → TLE: 32s
+- fix: 4m 17s
+- submit → TLE: 20s
+- fix: 5m 16s
+- submit → OK: 18s
+---
+
