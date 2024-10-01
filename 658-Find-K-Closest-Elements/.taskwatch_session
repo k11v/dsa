@@ -1,0 +1,23 @@
+1727811992	start	
+1727812072	record	get problem
+1727812566	record	get solution
+1727812748	record	get solution with slice indexing
+1727814364	record	code
+1727814591	record	check
+1727814609	record	submit → CE
+1727814636	record	fix
+1727814642	record	submit → WA
+1727814660	record	fix
+1727814683	record	submit → WA
+1727814819	record	break
+1727815114	record	fix
+1727815180	record	submit → WA
+1727815256	record	fix
+1727815278	record	submit → WA
+1727815295	record	fix
+1727815327	record	submit → TLE
+1727815584	record	fix
+1727815604	record	submit → TLE
+1727815920	record	fix
+1727815938	record	submit → OK
+1727815998	end	
