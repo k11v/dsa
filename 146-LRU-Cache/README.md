@@ -1,0 +1,23 @@
+---
+- get problem: 2m 16s
+- get solution with map and linked list: 9m 48s
+- code Get: 22m 16s
+- code Put: 10m 44s
+- check and fix: 15m 10s
+- submit → CE: 2m 53s
+- fix: 2s
+- get solution with map and linked list but easier implementation with help: 4m 2s
+- code: 27m 28s
+- submit → CE: 30s
+- fix: 0s
+- submit → WA: 21s
+- fix: 26m 43s
+- submit → CE: 0s
+- fix: 9s
+- submit → WA: 18s
+- code tests: 7m 0s
+- fix with tests: 3m 49s
+- submit → RE: 2s
+- fix with tests: 9m 22s
+- submit → OK: 24s
+---
