@@ -1,0 +1,11 @@
+1728080061	start	
+1728080170	record	get problem
+1728080660	record	get solution
+1728081044	record	code
+1728081115	record	check and no fix
+1728081119	record	submit → WA
+1728081561	record	fix
+1728081583	record	submit → OK
+1728081908	record	refactor
+1728081928	record	submit → OK
+1728081931	end	
