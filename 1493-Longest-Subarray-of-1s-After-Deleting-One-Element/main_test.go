@@ -3,35 +3,31 @@ package main
 // LeetCode
 
 func longestSubarray(nums []int) int {
-	maxOneCountWithJoin := 0
-	prevOneCount := 0
-	hasZeros := false
+	maxOnes := 0
 
-	for i := 0; i < len(nums); {
-		currZeroCount := 0
-		for i < len(nums) && nums[i] == 0 {
-			hasZeros = true
-			currZeroCount++
-			i++
-		}
-		currOneCount := 0
-		for i < len(nums) && nums[i] == 1 {
-			currOneCount++
-			i++
+	anyZeros := false
+	zeros := 0
+	start := 0
+
+	for end := 0; end < len(nums); end++ {
+		if nums[end] == 0 {
+			anyZeros = true
+			zeros++
 		}
 
-		if currZeroCount == 1 {
-			maxOneCountWithJoin = max(maxOneCountWithJoin, prevOneCount + currOneCount)
-		} else {
-			maxOneCountWithJoin = max(maxOneCountWithJoin, currOneCount)
+		for zeros > 1 {
+			if nums[start] == 0 {
+				zeros--
+			}
+			start++
 		}
 
-		prevOneCount = currOneCount
+		maxOnes = max(end-start+1 - zeros, maxOnes)
 	}
 
-	if !hasZeros {
-		maxOneCountWithJoin--
+	if !anyZeros {
+		maxOnes--
 	}
 
-	return maxOneCountWithJoin
+	return maxOnes
 }
