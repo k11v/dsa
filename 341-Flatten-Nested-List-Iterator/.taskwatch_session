@@ -1,0 +1,27 @@
+1728246704	start	
+1728246862	record	get problem
+1728247132	record	get solution
+1728248128	record	code
+1728248232	record	check and fix
+1728248248	record	submit → WA
+1728249131	record	fix
+1728249156	record	submit → RE
+1728249438	record	fix
+1728249463	record	submit → RE
+1728249464	record	fix
+1728249493	record	submit → WA
+1728250197	record	fix
+1728250217	record	submit → CE
+1728250237	record	fix
+1728250305	record	submit → WA
+1728250342	record	submit → RE
+1728250495	record	realize that this little undocumented constraint change requires a redesign
+1728251297	record	break
+1728253176	record	code from scratch
+1728253234	record	submit → CE, fix
+1728253259	record	submit → CE, fix
+1728253269	record	submit → TL
+1728254457	record	fix
+1728254490	record	submit → CE, fix
+1728254514	record	submit → OK
+1728255079	end	
