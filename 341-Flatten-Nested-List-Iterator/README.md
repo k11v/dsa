@@ -1,0 +1,26 @@
+---
+- get problem: 2m 38s
+- get solution: 4m 30s
+- code: 16m 36s
+- check and fix: 1m 44s
+- submit → WA: 16s
+- fix: 14m 43s
+- submit → RE: 25s
+- fix: 4m 42s
+- submit → RE: 25s
+- fix: 1s
+- submit → WA: 29s
+- fix: 11m 44s
+- submit → CE: 20s
+- fix: 20s
+- submit → WA: 1m 8s
+- submit → RE: 37s
+- realize that this little undocumented constraint change requires a redesign: 2m 33s
+- code from scratch: 31m 19s
+- submit → CE, fix: 58s
+- submit → CE, fix: 25s
+- submit → TL: 10s
+- fix: 19m 48s
+- submit → CE, fix: 33s
+- submit → OK: 24s
+---
