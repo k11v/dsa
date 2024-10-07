@@ -1,0 +1,19 @@
+1728292560	start	
+1728292626	record	get problem
+1728292695	record	get solution
+1728292875	record	code
+1728292943	record	check
+1728292969	record	submit → WA
+1728293513	record	code
+1728293606	record	check
+1728293658	record	submit → CE
+1728293658	record	fix
+1728293737	record	submit → CE
+1728293775	record	fix
+1728293792	record	submit → WA
+1728294195	record	fix
+1728294218	record	submit → OK
+1728294467	record	refactor
+1728295255	record	refactor
+1728295287	record	submit → OK
+1728295829	end	
