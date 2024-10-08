@@ -1,75 +1,65 @@
 package main
 
-import (
-	"os"
-)
-
 // LeetCode
 
-type UnionFind struct{
-	p []int
-	s []int
-}
-
-func NewUnionFind(n int) UnionFind {
-	p := make([]int, n)
-	s := make([]int, n)
-	for i := 0; i < n; i++ {
-		p[i] = i
-		s[i] = 1
-	}
-	return UnionFind{p: p, s: s}
-}
-
-func (uf UnionFind) Union(u, v int) {
-	u = uf.Find(u)
-	v = uf.Find(v)
-	if u == v {
-		return
-	}
-	if uf.s[u] < uf.s[v] {
-		u, v = v, u
-	}
-	uf.p[v] = u
-	uf.s[u] += uf.s[v]
-}
-
-func (uf UnionFind) Find(u int) int {
-	if uf.p[u] == u {
-		return u
-	}
-	p := uf.Find(uf.p[u])
-	uf.p[u] = p
-	return p
-}
+type IJ struct { i, j int }
 
 func numIslands(grid [][]byte) int {
-	n, m := len(grid), len(grid[0])
-	uf := NewUnionFind(n*m)
-
-	for i := 0; i < n; i++ {
-		for j := 0; j < m; j++ {
-			if oi := i-1; oi >= 0 && grid[i][j] == grid[oi][j] {
-				uf.Union(i*m+j, oi*m+j)
-			}
-			if oi := i+1; oi < n && grid[i][j] == grid[oi][j] {
-				uf.Union(i*m+j, oi*m+j)
-			}
-			if oj := j-1; oj >= 0 && grid[i][j] == grid[i][oj] {
-				uf.Union(i*m+j, i*m+oj)
-			}
-			if oj := j+1; oj < m && grid[i][j] == grid[i][oj] {
-				uf.Union(i*m+j, i*m+oj)
-			}
-		}
+	if len(grid) == 0 || len(grid[0]) == 0 {
+		return 0
 	}
 
 	count := 0
+
+	n, m := len(grid), len(grid[0])
+	outsideQueue := make([]IJ, 0)
+	outsideQueue = append(outsideQueue, IJ{0, 0})
+	insideQueue := make([]IJ, 0)
+	visited := make([][]bool, n)
 	for i := 0; i < n; i++ {
-		for j := 0; j < m; j++ {
-			if uf.Find(i*m+j) == i*m+j && grid[i][j] == '1' {
-				count++
+		visited[i] = make([]bool, m)
+	}
+
+	for len(outsideQueue) != 0 {
+		var r IJ
+		r, outsideQueue = outsideQueue[0], outsideQueue[1:]
+		if visited[r.i][r.j] {
+			continue
+		}
+
+		insideQueue = append(insideQueue, r)
+		for len(insideQueue) != 0 {
+			var p IJ
+			p, insideQueue = insideQueue[0], insideQueue[1:]
+			if visited[p.i][p.j] {
+				continue
 			}
+			visited[p.i][p.j] = true
+
+			neighbors := []IJ{
+				{p.i-1, p.j},
+				{p.i+1, p.j},
+				{p.i, p.j-1},
+				{p.i, p.j+1},
+			}
+			for _, q := range neighbors {
+				if !(q.i >= 0 && q.i < n && q.j >= 0 && q.j < m) {
+					continue
+				}
+				if visited[q.i][q.j] {
+					continue
+				}
+
+				if grid[q.i][q.j] == grid[p.i][p.j] {
+					insideQueue = append(insideQueue, q)
+				} else {
+					outsideQueue = append(outsideQueue, q)
+				}
+			}
+		}
+
+		if grid[r.i][r.j] == '1' {
+			count++
 		}
 	}
 
