@@ -19,3 +19,18 @@
 1728387988	record	submit → CE
 1728388042	record	fix
 1728388069	record	submit → OK
+1728388542	record	break
+1728389284	record	get solution with map and slice with help
+1728389551	amend	get solution with map and slice with help
+1728389961	record	code
+1728390056	record	check and no fix
+1728390108	record	submit → CE
+1728390109	record	fix
+1728390130	record	submit → WA
+1728390362	record	fix
+1728390389	record	submit → OK
+1728390724	record	no check
+1728390730	amend	refactor
+1728390732	record	no check
+1728390754	record	submit → OK
+1728390759	end	
