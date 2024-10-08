@@ -1,6 +1,32 @@
 ---
-- get problem: 0s
-- get solution: 0s
-- code: 0s
-- code to fix: 0s
+- get problem: 2m 50s
+- get possible solution with hashmap-like implementation but discard it: 5m 4s
+- get no other solutions: 7m 43s
+- get solution with buckets: 4m 23s
+- code: 24m 44s
+- code random with help: 1m 59s
+- code hash with help: 9m 46s
+- check and no fix: 3m 42s
+- submit → CE: 21s
+- fix: 1m 9s
+- submit → CE: 12s
+- fix: 37s
+- submit → CE: 22s
+- fix with help: 1m 4s
+- submit → CE: 7s
+- fix: 3m 13s
+- submit → CE: 8s
+- fix: 54s
+- submit → OK: 27s
+- get solution with map and slice with help: 16m 49s
+- code: 6m 50s
+- check and no fix: 1m 35s
+- submit → CE: 52s
+- fix: 1s
+- submit → WA: 21s
+- fix: 3m 52s
+- submit → OK: 27s
+- refactor: 5m 41s
+- no check: 2s
+- submit → OK: 22s
 ---
