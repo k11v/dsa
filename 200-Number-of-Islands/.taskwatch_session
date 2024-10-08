@@ -1,0 +1,23 @@
+1728411897	start	
+1728411981	record	get problem
+1728412072	record	get solution with union-find
+1728412667	record	get solution with DFS and BFS
+1728412919	record	get no other solution yet
+1728414061	record	code union find
+1728414749	record	code the rest
+1728414864	record	check and fix
+1728414890	record	submit → CE
+1728414945	record	fix
+1728414964	record	submit → CE
+1728414996	record	fix
+1728415023	record	submit → OK
+1728416321	record	refactor
+1728416352	record	no check
+1728416687	record	fix CE
+1728416725	amend	fix CE
+1728416743	record	WA
+1728417082	record	refactor
+1728417083	record	WA
+1728417885	record	fix
+1728417958	record	OK
+1728418153	record	break
