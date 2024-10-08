@@ -1,6 +1,41 @@
 ---
-- get problem: 0s
-- get solution: 0s
-- code: 0s
-- code to fix: 0s
+- get problem: 1m 24s
+- get solution with union-find: 1m 31s
+- get solution with DFS and BFS: 9m 55s
+- get no other solution yet: 4m 12s
+- code union find: 19m 2s
+- code the rest: 11m 28s
+- check and fix: 1m 55s
+- submit → CE: 26s
+- fix: 55s
+- submit → CE: 19s
+- fix: 32s
+- submit → OK: 27s
+- refactor: 21m 38s
+- no check: 31s
+- fix CE: 6m 13s
+- WA: 18s
+- refactor: 5m 39s
+- WA: 1s
+- fix: 13m 22s
+- OK: 1m 13s
+- get solution with BFS and BFS: 13m 59s
+- code: 35m 47s
+- check and fix: 4m 51s
+- CE fix: 54s
+- OK: 12s
+- refactor, fix: 7m 21s
+- refactor: 2m 4s
+- OK: 53s
+- read about solution with one traversal: 4m 55s
+- get solution with one traversal: 8m 3s
+- code: 7m 48s
+- WA: 16s
+- fix: 1m 3s
+- WA: 1s
+- check: 47s
+- fix: 1s
+- OK: 22s
+- refactor: 1m 42s
+- OK: 51s
 ---
