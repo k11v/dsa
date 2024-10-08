@@ -1,0 +1,21 @@
+1728383828	start	
+1728383998	record	get problem
+1728384302	record	get possible solution with hashmap-like implementation but discard it
+1728384765	record	get no other solutions
+1728385028	record	get solution with buckets
+1728386512	record	code
+1728386631	record	code random with help
+1728387217	record	code hash with help
+1728387333	record	break
+1728387555	record	check and no fix
+1728387576	record	submit → CE
+1728387645	record	fix
+1728387657	record	submit → CE
+1728387694	record	fix
+1728387716	record	submit → CE
+1728387780	record	fix with help
+1728387787	record	submit → CE
+1728387980	record	fix
+1728387988	record	submit → CE
+1728388042	record	fix
+1728388069	record	submit → OK
