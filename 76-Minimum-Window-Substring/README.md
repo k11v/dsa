@@ -1,6 +1,33 @@
 ---
-- get problem: 0s
-- get solution: 0s
-- code: 0s
-- code to fix: 0s
+- get problem: 1m 13s
+- get solution: 22m 28s
+- code: 47m 48s
+- refactor: 30m 39s
+- refactor: 14m 43s
+- CE: 25s
+- fix: 46s
+- RE: 3s
+- fix: 1m 5s
+- WA: 19s
+- fix: 9m 26s
+- WA: 2s
+- fix: 1m 39s
+- WA: 21s
+- fix: 5m 56s
+- OK: 46s
+- get solution with refactor: 36s
+- code: 22m 23s
+- fix: 2m 58s
+- CE: 13s
+- fix: 22s
+- TL: 19s
+- fix: 2m 2s
+- WA: 8s
+- fix: 1m 31s
+- OK: 24s
+- get solution with refactor with help: 19m 49s
+- code: 19m 49s
+- OK: 33s
+- refactor: 11m 42s
+- OK: 1s
 ---

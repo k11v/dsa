@@ -3,14 +3,14 @@ package main
 // LeetCode
 
 func minWindow(s string, t string) string {
-	got := make(map[byte]int)
-	want := make(map[byte]int)
+	got, want := [128]int{}, [128]int{}
+	gotComplete, wantComplete := 0, 0
 	for i := 0; i < len(t); i++ {
+		if want[t[i]] == 0 {
+			wantComplete++
+		}
 		want[t[i]]++
 	}
-	gotComplete := 0
-	wantComplete := len(want)
-
 
 	minB, minE := 0, len(s)
 	b, e := 0, 0
