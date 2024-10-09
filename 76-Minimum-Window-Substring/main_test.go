@@ -3,61 +3,66 @@ package main
 // LeetCode
 
 func minWindow(s string, t string) string {
-	gotIndices := make([]int, 0)
-	gotIndicesFromByte := make(map[byte][]int)
-	wantFromByte := make(map[byte]int)
-	incomplete := make(map[byte]struct{})
+	got := make(map[byte]int)
+	want := make(map[byte]int)
+
 	for i := 0; i < len(t); i++ {
-		gotIndicesFromByte[t[i]] = make([]int, 0)
-		wantFromByte[t[i]]++
-		incomplete[t[i]] = struct{}{}
+		want[t[i]]++
 	}
 
-	findWant := func(p *int) (ok bool) {
-		*p++
-		for *p < len(s) && wantFromByte[s[*p]] == 0 {
-			*p++
-		}
-		if *p == len(s) {
-			return false
-		}
-		q := *p
-
-		gotIndices = append(gotIndices, q)
-		gotIndicesFromByte[s[q]] = append(gotIndicesFromByte[s[q]], q)
-		if got, want := len(gotIndicesFromByte[s[q]]), wantFromByte[s[q]]; got == want {
-			delete(incomplete, s[q])
-		}
-
-		return true
+	l := 0
+	for l < len(s) && want[s[l]] == 0 {
+		l++
 	}
-
-	l := -1
-	if !findWant(&l) {
+	if l == len(s) {
 		return ""
 	}
-	r := l
 
-	minB, minE := 0, len(s)
+	r := l
+	gotComplete := 0
+	wantComplete := len(want)
+	for gotComplete < wantComplete {
+		for r < len(s) && want[s[r]] == 0 {
+			r++
+		}
+		if r == len(s) {
+			return ""
+		}
+		got[s[r]]++
+		if got[s[r]] == want[s[r]] {
+			gotComplete++
+		}
+		r++
+	}
+	r--
+
+	minL, minR := l, r
+outer:
 	for {
-		if len(incomplete) == 0 {
-			b, e := l, r+1
-			if e-b < minE-minB {
-				minB, minE = b, e
+		for got[s[l]] > want[s[l]] {
+			got[s[l]]--
+			l++
+			for l < len(s) && want[s[l]] == 0 {
+				l++
+			}
+			if l == len(s) {
+				break outer
 			}
 		}
-		if !findWant(&r) {
-			break
+
+		if r-l < minR-minL {
+			minL, minR = l, r
 		}
-		for len(gotIndicesFromByte[s[l]]) > wantFromByte[s[l]] {
-			gotIndices = gotIndices[1:]
-			gotIndicesFromByte[s[l]] = gotIndicesFromByte[s[l]][1:]
-			l = gotIndices[0]
+
+		r++
+		for r < len(s) && want[s[r]] == 0 {
+			r++
 		}
+		if r == len(s) {
+			break outer
+		}
+		got[s[r]]++
 	}
 
-	if len(incomplete) != 0 {
-		return ""
-	}
-	return s[minB:minE]
+	return s[minL:minR+1]
 }
