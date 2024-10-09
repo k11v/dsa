@@ -12,6 +12,7 @@ func minWindow(s string, t string) string {
 		want[t[i]]++
 	}
 
+	found := false
 	minB, minE := 0, len(s)
 	b, e := 0, 0
 	for e < len(s) {
@@ -23,24 +24,23 @@ func minWindow(s string, t string) string {
 		}
 		e++
 
-		if gotComplete == wantComplete {
-			for b < len(s) {
-				if want[s[b]] > 0 {
-					if got[s[b]] == want[s[b]] {
-						break
-					}
-					got[s[b]]--
-				}
-				b++
-			}
-
+		for gotComplete == wantComplete {
+			found = true
 			if e-b < minE-minB {
 				minB, minE = b, e
 			}
+
+			if want[s[b]] > 0 {
+				if got[s[b]] == want[s[b]] {
+					gotComplete--
+				}
+				got[s[b]]--
+			}
+			b++
 		}
 	}
 
-	if gotComplete != wantComplete {
+	if !found {
 		return ""
 	}
 	return s[minB:minE]
