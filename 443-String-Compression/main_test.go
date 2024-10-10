@@ -5,10 +5,17 @@ import "strconv"
 // LeetCode
 
 func compress(chars []byte) int {
-	w := 0
-	c := 0
+	r, w := 0, 0
+	for r < len(chars) {
+		rn := r+1
+		for rn < len(chars) && chars[rn] == chars[r] {
+			rn++
+		}
 
-	flush := func() {
+		chars[w] = chars[r]
+		w++
+
+		c := rn-r
 		if c > 1 {
 			cb := []byte(strconv.Itoa(c))
 			for i := 0; i < len(cb); i++ {
@@ -16,25 +23,9 @@ func compress(chars []byte) int {
 				w++
 			}
 		}
+
+		r = rn
 	}
-
-	for r := 0; r < len(chars); r++ {
-		if r == 0 {
-			w++
-			c++
-			continue
-		}
-
-		if chars[r] == chars[w-1] {
-			c++
-		} else {
-			flush()
-			c = 1
-			chars[w] = chars[r]
-			w++
-		}
-	}
-	flush()
-
+	chars = chars[:w]
 	return w
 }
