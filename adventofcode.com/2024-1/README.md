@@ -1,0 +1,8 @@
+---
+- read 1: 6m 0s
+- think 1: 1m 18s
+- solve 1: 12m 57s
+- read 2: 5m 55s
+- think 2: 4m 32s
+- solve 2: 1s
+---
