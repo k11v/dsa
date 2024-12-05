@@ -14,4 +14,4 @@ Time to solve:
 
 Notes:
 
-- Part 1 likely has a more efficient solution.
+- Part 1 likely could have a more efficient solution.
