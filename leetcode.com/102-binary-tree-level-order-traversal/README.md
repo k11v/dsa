@@ -20,3 +20,4 @@
 - fix solution (it was mysterious shadowing of a Go variable): 3m 38s
 - submit → OK: 11s
 ---
+Time spent on tasks: 44m 14s

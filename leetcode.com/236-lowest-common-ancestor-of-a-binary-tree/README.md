@@ -11,3 +11,4 @@
 - code without path with help: 10m 25s
 - submit → OK: 15s
 ---
+Time spent on tasks: 40m 4s

@@ -9,3 +9,4 @@
 - refactor: 5m 25s
 - submit → OK: 20s
 ---
+Time spent on tasks: 31m 7s

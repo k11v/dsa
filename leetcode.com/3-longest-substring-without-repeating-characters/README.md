@@ -6,3 +6,4 @@
 - code → submit → WA: 10m 46s
 - code → submit → OK: 4m 3s
 ---
+Time spent on tasks: 31m 37s

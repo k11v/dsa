@@ -5,7 +5,9 @@
 - code: 3m 38s
 - not get solution: 7m 38s
 ---
+Time spent on tasks: 20m 18s
 
-`strings.Index` could be used to solve it with the standard library.
+Notes:
 
-Z-function could be used to solve it with linear time.
+- `strings.Index` could be used to solve it with the standard library.
+- Z-function could be used to solve it with linear time.

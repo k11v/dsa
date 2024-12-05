@@ -13,3 +13,4 @@
 - no fix: 1m 6s
 - OK: 23s
 ---
+Time spent on tasks: 58m 14s

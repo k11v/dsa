@@ -6,3 +6,4 @@
 - fix: 11s
 - OK: 36s
 ---
+Time spent on tasks: 5m 0s

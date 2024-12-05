@@ -7,5 +7,8 @@
 - fix: 1m 34s
 - submit → OK: 19s
 ---
+Time spent on tasks: 7m 8s
 
-RE happened because I didn't think that invertTree could be initially called on nil root.
+Notes:
+
+- RE happened because I didn't think that invertTree could be initially called on nil root.

@@ -7,3 +7,4 @@
 - test → pass: 1m 23s
 - read solution → correct: 7m 4s
 ---
+Time spent on tasks: 53m 33s

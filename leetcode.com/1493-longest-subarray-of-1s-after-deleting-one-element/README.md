@@ -12,3 +12,4 @@
 - write solution with sliding window: 12m 29s
 - submit → OK: 43s
 ---
+Time spent on tasks: 1h 10m 1s
