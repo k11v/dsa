@@ -15,5 +15,5 @@ Time to solve:
 Notes:
 
 - Instead of keeping the entire grid in the memory,
-  it is LIKELY enough to keep only the last four rows
-  in A and the last three rows in B.
+  it is likely enough to keep only the last four rows
+  in part 1 and the last three rows in part 2.
