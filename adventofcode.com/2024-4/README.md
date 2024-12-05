@@ -10,7 +10,7 @@ Time to solve:
 - read: 2m 8s
 - solve: 4m 22s
 - success: 31s
-- *total: 45m 42s*
+- _total: 45m 42s_
 
 Notes:
 
