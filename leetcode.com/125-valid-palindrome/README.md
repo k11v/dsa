@@ -4,3 +4,4 @@
 - get solution: 1m 10s
 - code: 18m 46s
 ---
+Time spent on tasks: 22m 50s
