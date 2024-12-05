@@ -5,3 +5,4 @@
 - code to fix: 1m 58s
 - code to fix: 2m 52s
 ---
+Time spent on tasks: 19m 40s

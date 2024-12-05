@@ -33,3 +33,4 @@
 - refactor: 19m 18s
 - OK: 1s
 ---
+Time spent on tasks: 3h 59m 48s
