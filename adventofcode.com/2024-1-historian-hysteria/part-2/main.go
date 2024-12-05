@@ -3,13 +3,11 @@ package main
 import (
 	"io"
 	"fmt"
-	"slices"
-	"flag"
 )
 
 func main() {
 	if err := run(); err != nil {
-		panic()
+		panic(err)
 	}
 }
 
@@ -37,4 +35,5 @@ func run() error {
 	}
 
 	fmt.Println(s)
+	return nil
 }
