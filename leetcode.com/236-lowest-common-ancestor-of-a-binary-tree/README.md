@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 1m 39s
 - get solution: 6m 58s
 - code: 11m 1s
@@ -10,5 +11,4 @@
 - submit → OK: 30s
 - code without path with help: 10m 25s
 - submit → OK: 15s
----
-Time spent on tasks: 40m 4s
+- _total: 40m 4s_

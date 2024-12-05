@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 1m 24s
 - get solution with union-find: 1m 31s
 - get solution with DFS and BFS: 9m 55s
@@ -38,5 +39,4 @@
 - OK: 22s
 - refactor: 1m 42s
 - OK: 51s
----
-Time spent on tasks: 3h 12m 51s
+- _total: 3h 12m 51s_

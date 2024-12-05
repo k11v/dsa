@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 29s
 - get solution: 1m 29s
 - code: 2m 4s
@@ -6,8 +7,7 @@
 - submit → RE: 26s
 - fix: 1m 34s
 - submit → OK: 19s
----
-Time spent on tasks: 7m 8s
+- _total: 7m 8s_
 
 Notes:
 

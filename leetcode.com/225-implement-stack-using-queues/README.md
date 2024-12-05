@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 2m 6s
 - get solution (O(n)): 7m 19s
 - not get other solutions: 1m 48s
@@ -9,5 +10,4 @@
 - submit → CE: 43s
 - fix: 48s
 - submit → OK: 25s
----
-Time spent on tasks: 47m 5s
+- _total: 47m 5s_
