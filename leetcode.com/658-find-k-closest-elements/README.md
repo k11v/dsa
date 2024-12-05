@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 1m 20s
 - get solution: 8m 14s
 - get solution with slice indexing: 3m 2s
@@ -19,5 +20,4 @@
 - submit → TLE: 20s
 - fix: 5m 16s
 - submit → OK: 18s
----
-Time spent on tasks: 1h 3m 30s
+- _total: 1h 3m 30s_

@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 2m 16s
 - get solution with map and linked list: 9m 48s
 - code Get: 22m 16s
@@ -20,5 +21,4 @@
 - submit → RE: 2s
 - fix with tests: 9m 22s
 - submit → OK: 24s
----
-Time spent on tasks: 2h 23m 17s
+- _total: 2h 23m 17s_

@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 2m 38s
 - get solution: 4m 30s
 - code: 16m 36s
@@ -23,5 +24,4 @@
 - fix: 19m 48s
 - submit → CE, fix: 33s
 - submit → OK: 24s
----
-Time spent on tasks: 1h 56m 48s
+- _total: 1h 56m 48s_

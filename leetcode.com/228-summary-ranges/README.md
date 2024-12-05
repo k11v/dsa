@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 1m 40s
 - get solution: 2m 8s
 - code: 6m 45s
@@ -10,5 +11,4 @@
 - submit → OK: 20s
 - refactor: 7m 12s
 - submit → OK: 29s
----
-Time spent on tasks: 22m 12s
+- _total: 22m 12s_

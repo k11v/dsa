@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 59s
 - get solution: 3m 7s
 - code: 4m 0s
@@ -6,5 +7,4 @@
 - submit → WA: 24s
 - fix: 2m 33s
 - submit → OK: 41s
----
-Time spent on tasks: 12m 46s
+- _total: 12m 46s_

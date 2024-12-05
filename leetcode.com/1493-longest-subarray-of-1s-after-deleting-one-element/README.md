@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 1m 45s
 - get solution with O(n) time and O(n) memory: 4m 10s
 - get solution with O(n) time and O(1) memory: 1m 59s
@@ -11,5 +12,4 @@
 - read solutions with sliding window: 27m 35s
 - write solution with sliding window: 12m 29s
 - submit → OK: 43s
----
-Time spent on tasks: 1h 10m 1s
+- _total: 1h 10m 1s_

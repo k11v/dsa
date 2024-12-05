@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 1m 25s
 - get solution: 7m 26s
 - code: 13m 47s
@@ -12,5 +13,4 @@
 - code with refactor with help: 8m 41s
 - no fix: 1m 6s
 - OK: 23s
----
-Time spent on tasks: 58m 14s
+- _total: 58m 14s_

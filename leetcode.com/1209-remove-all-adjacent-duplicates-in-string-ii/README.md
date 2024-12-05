@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 2m 45s
 - get solution (O(n²) time): 2m 20s
 - get solution (O(n) time, O(n) memory): 9m 37s
@@ -13,5 +14,4 @@
 - submix → CE: 1m 30s
 - fix: 2s
 - submit → OK: 11s
----
-Time spent on tasks: 38m 46s
+- _total: 38m 46s_

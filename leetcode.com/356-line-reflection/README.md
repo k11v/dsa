@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 2m 45s
 - code tests: 5m 5s
 - get solution: 12m 34s
@@ -6,5 +7,4 @@
 - code: 21m 3s
 - test → pass: 1m 23s
 - read solution → correct: 7m 4s
----
-Time spent on tasks: 53m 33s
+- _total: 53m 33s_

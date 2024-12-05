@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 54s
 - add tests: 5m 12s
 - get solution with three loops: 4m 43s
@@ -9,5 +10,4 @@
 - text → WA: 2s
 - fix: 4m 31s
 - test → OK: 9s
----
-Time spent on tasks: 34m 43s
+- _total: 34m 43s_
