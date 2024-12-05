@@ -8,19 +8,12 @@ import (
 )
 
 func main() {
-	flag.Parse()
-	
-	switch part := flag.Arg(0); part {
-	case "1":
-		part1()
-	case "2":
-		part2()
-	default:
-		panic(fmt.Errorf("unknown part %q", part))
+	if err := run(); err != nil {
+		panic()
 	}
 }
 
-func part1() {
+func run() error {
 	left := make([]int, 0)
 	right := make([]int, 0)
 
@@ -31,7 +24,7 @@ func part1() {
 		if err == io.EOF {
 			break
 		} else if err != nil {
-			panic(err)
+			return err
 		}
 
 		left = append(left, l)
@@ -44,32 +37,6 @@ func part1() {
 	s := 0
 	for i := 0; i < len(left); i++ {
 		s += abs(left[i] - right[i])
-	}
-
-	fmt.Println(s)
-}
-
-func part2() {
-	left := make(map[int]int, 0)
-	right := make(map[int]int, 0)
-
-	var err error
-	var l, r int
-	for {
-		_, err = fmt.Scanf("%d %d\n", &l, &r)
-		if err == io.EOF {
-			break
-		} else if err != nil {
-			panic(err)
-		}
-
-		left[l]++
-		right[r]++
-	}
-
-	s := 0
-	for x := range left {
-		s += x * left[x] * right[x]
 	}
 
 	fmt.Println(s)
