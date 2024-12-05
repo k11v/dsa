@@ -1,4 +1,5 @@
----
+Time to solve:
+
 - get problem: 2m 50s
 - get possible solution with hashmap-like implementation but discard it: 5m 4s
 - get no other solutions: 7m 43s
@@ -29,5 +30,4 @@
 - refactor: 5m 41s
 - no check: 2s
 - submit → OK: 22s
----
-Time spent on tasks: 1h 45m 37s
+- _total: 1h 45m 37s_
