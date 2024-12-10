@@ -7,4 +7,4 @@ Time to solve:
 - run and fix: 6m 12s
 - success: 15s
 - read: 2m 28s
-- _total: 38m 10s_
+- _total without part 2: 38m 10s_
