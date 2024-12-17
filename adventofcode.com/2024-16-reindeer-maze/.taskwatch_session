@@ -1,0 +1,16 @@
+1734429834	start	
+1734430028	record	read
+1734430790	record	think
+1734432246	record	think
+1734433479	record	break
+1734436376	record	code
+1734436839	record	check and no fix
+1734436896	record	run and fix CE
+1734437078	record	run and fix WA about both setting start in d and pushing start to h
+1734437096	record	success
+1734437201	record	read
+1734437577	record	think
+1734439479	record	code
+1734440974	record	fix WA about shadowing q when dequeuing with debugger
+1734440983	record	success
+1734440984	end	
