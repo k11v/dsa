@@ -1,0 +1,15 @@
+1734447762	start	
+1734448230	record	read
+1734448933	record	code input
+1734450015	record	code
+1734450112	record	check
+1734450217	record	run and fix CE
+1734450392	record	break
+1734452028	record	run and fix RE about input handling
+1734452050	record	success
+1734452227	record	read
+1734452549	record	code
+1734453613	record	code
+1734457561	record	break
+1734457672	record	drop brute-force solution search after ra == 6_000_000_000
+1734457679	end	
