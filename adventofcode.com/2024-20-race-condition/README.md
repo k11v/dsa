@@ -1,0 +1,22 @@
+Time to solve:
+
+- read: 2s
+- think: 7m 10s
+- code: 19m 58s
+- check and fix: 8m 48s
+- run and fix CE: 57s
+- run and fix WA: 11m 22s
+- think: 13m 25s
+- run and fix WA: 11m 42s
+- success: 2s
+- read: 2m 4s
+- think of O(n²) time: 3m 38s
+- think of O(400n) time: 6m 26s
+- code: 7m 25s
+- check: 3s
+- WA: 1m 59s
+- fix, run and WA: 38m 23s
+- code: 5m 24s
+- run and fix WA: 2m 52s
+- success: 1m 16s
+- _total: 2h 22m 56s_
