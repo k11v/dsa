@@ -1,0 +1,37 @@
+Time to solve:
+
+- read: 1m 55s
+- think of brute: 57s
+- think of brute: 1m 46s
+- think of prefix sum: 3m 32s
+- think of nothing else: 1m 56s
+- code: 8m 53s
+- tidy: 6m 50s
+- tidy: 5m 58s
+- code brute: 8m 33s
+- run and WA: 31s
+- fix: 58s
+- run and OK: 5s
+- think: 3m 9s
+- code: 7m 53s
+- tidy by slices godoc: 2m 25s
+- run and WA: 8m 40s
+- fix: 1s
+- run and WA: 1s
+- read hint 1: 1m 41s
+- think: 3s
+- code: 1m 41s
+- run and WA: 3m 28s
+- code: 9m 23s
+- run and OK: 21s
+- read hints 2-3: 55s
+- think: 5m 59s
+- code: 1m 18s
+- run and WA: 21s
+- read solutions: 8m 0s
+- think: 2m 33s
+- code: 3m 49s
+- run and WA: 1m 48s
+- code: 7m 14s
+- run and OK: 1s
+- _total: 1h 52m 38s_
