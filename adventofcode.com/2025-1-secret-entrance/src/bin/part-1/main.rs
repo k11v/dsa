@@ -4,14 +4,33 @@ use std::io::Read;
 fn main() {
     // Read input.
     let mut input = String::new();
-    io::stdin()
-        .read_to_string(&mut input)
-        .expect("stdin should be readable");
+    io::stdin().read_to_string(&mut input).unwrap();
     let input = input;
 
     // Parse instructions.
-    let instructions = input.split("\n");
+    let instructions = input.lines();
+
+    // Count 0s.
+    let mut position = 50;
+    let mut count = 0;
+
     for instruction in instructions {
-        println!("{}", instruction)
+        let (direction, amount) = instruction.split_at(1);
+        let direction = match direction {
+            "L" => Some(-1),
+            "R" => Some(1),
+            _ => None,
+        }
+        .unwrap();
+        let amount = amount.parse::<i64>().unwrap();
+
+        position = (position + direction * amount) % 100;
+
+        if position == 0 {
+            count += 1;
+        }
     }
+
+    // Write output.
+    println!("{}", count)
 }
