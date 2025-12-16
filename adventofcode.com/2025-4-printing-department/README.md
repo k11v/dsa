@@ -1,0 +1,2 @@
+- Time to solve part 1: 44:59
+- Time to solve part 2: 19:25
