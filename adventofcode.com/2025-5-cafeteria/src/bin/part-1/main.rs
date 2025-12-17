@@ -1,36 +1,15 @@
-// solution 1
-// sort ranges
-// normalize ranges to not have overlaps
-// sort nums
-// for each range:
-// // binary search left boundary
-// // binary search right boundary
-// // calculate count based on index difference
-// // add count to result
-// return result
-
-// solution 2
-// sort ranges
-// sort nums
-// initialize range index
-// initialize num index
-// while num < range: increment num index
-// while num in range: increment num index, increment result
-// while num > range: increment range index
-// return result
-
 use std::io;
 use std::io::BufRead;
 
 fn main() {
-    let res = 0;
+    let mut res = 0;
 
-    let ranges = vec![];
-    let nums = vec![];
+    let mut ranges = vec![];
+    let mut nums = vec![];
 
-    let lines = io::stdin().lock().lines();
+    let mut lines = io::stdin().lock().lines();
 
-    for line in lines {
+    for line in lines.by_ref() {
         let line = match line {
             Ok(v) => v,
             Err(e) => panic!("failed to read line: {}", e),
@@ -45,17 +24,17 @@ fn main() {
             None => panic!("failed to parse range: '-' not found"),
         };
 
-        let a = match a.parse::<i32>() {
+        let a = match a.parse::<i64>() {
             Ok(v) => v,
             Err(e) => panic!("failed to parse left boundary of range: {}", e),
         };
 
-        let b = match b.parse::<i32>() {
+        let b = match b.parse::<i64>() {
             Ok(v) => v,
             Err(e) => panic!("failed to parse right boundary of range: {}", e),
         };
 
-        ranges.append((a, b));
+        ranges.push((a, b));
     }
 
     for line in lines {
@@ -64,12 +43,12 @@ fn main() {
             Err(e) => panic!("failed to read line: {}", e),
         };
 
-        let num = match line.parse::<i32>() {
+        let num = match line.parse::<i64>() {
             Ok(v) => v,
             Err(e) => panic!("failed to parse num: {}", e),
         };
 
-        nums.append(num);
+        nums.push(num);
     }
 
     ranges.sort();
